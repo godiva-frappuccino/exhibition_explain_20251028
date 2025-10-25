@@ -24,7 +24,7 @@ function App() {
         <div className="image-container">  
           <div className="image-wrapper">  
             <img src={machineUrl} alt="Example" className="image" />  
-            <div className="image-title">『偽の天啓』 2025年作 石塑粘土、樹脂、金属部品</div>  
+            <div className="image-title">『機神の天啓』 2025年作 石塑粘土、樹脂、金属部品</div>  
           </div>  
         </div>  
   
