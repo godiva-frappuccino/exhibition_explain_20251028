@@ -144,8 +144,9 @@ body {
 .App-text {  
   margin-top: 20px;  
   text-align: left;  
-  max-width: 800px;  
-  font-size: 18px;  
+  max-width: 720px;  
+  font-size: clamp(14px, 1.4vw, 18px); /* 最小14px、推奨はビューポート幅に応じて、最大18px */  
+  line-height: 1.6;  
   box-sizing: border-box;  
 }  
   
@@ -228,3 +229,14 @@ th, td {
   width: 100%;  
   height: auto;  
 }  
+
+/* 略歴（最後のブロック）を小さく、読みやすくする */  
+.profile-bio,  
+.App-footer p,       /* footer内に置いている場合のフォールバック指定 */  
+.h4-section p {      /* h4-section 内に置いている場合のフォールバック */  
+  font-size: clamp(10px, 1.0vw, 16px); /* 小さめに、かつレスポンシブ */  
+  line-height: 1.6;  
+  max-width: 720px;   /* 横幅を制限して読みやすく */  
+  margin: 0 auto;  
+}  
+  
